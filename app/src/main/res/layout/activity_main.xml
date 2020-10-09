@@ -15,8 +15,8 @@
         android:layout_marginTop="20dp"
         android:onClick="onClickBtnSomar"
         android:text="+"
-        app:layout_constraintStart_toEndOf="@+id/btn_0"
-        app:layout_constraintTop_toBottomOf="@+id/btn_2" />
+        app:layout_constraintStart_toEndOf="@+id/btn_resultado"
+        app:layout_constraintTop_toBottomOf="@+id/btn_subtrair" />
 
     <Button
         android:id="@+id/btn_subtrair"
@@ -27,8 +27,44 @@
         android:layout_marginTop="20dp"
         android:onClick="onClickBtnSubtrair"
         android:text="-"
-        app:layout_constraintStart_toEndOf="@+id/btn_somar"
-        app:layout_constraintTop_toBottomOf="@+id/btn_2" />
+        app:layout_constraintStart_toEndOf="@+id/btn_3"
+        app:layout_constraintTop_toBottomOf="@+id/btn_multi" />
+
+    <Button
+        android:id="@+id/btn_resultado"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickBtnResultado"
+        android:text="="
+        app:layout_constraintStart_toEndOf="@+id/btn_0"
+        app:layout_constraintTop_toBottomOf="@+id/btn_3" />
+
+    <Button
+        android:id="@+id/btn_multi"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickBtnMultiplicar"
+        android:text="*"
+        app:layout_constraintStart_toEndOf="@+id/btn_6"
+        app:layout_constraintTop_toBottomOf="@+id/btn_divisao" />
+
+    <Button
+        android:id="@+id/btn_divisao"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="onClickBtnDividir"
+        android:text="/"
+        app:layout_constraintStart_toEndOf="@+id/btn_9"
+        app:layout_constraintTop_toBottomOf="@+id/display_tv" />
 
     <Button
         android:id="@+id/btn_3"

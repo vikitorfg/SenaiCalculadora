@@ -8,6 +8,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView display;
+    String primeiroNumero = "";
+    String segundoNumero = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,11 +67,25 @@ public class MainActivity extends AppCompatActivity {
         atualizarDisplay("-");
     }
 
+    public void onClickBtnMultiplicar(View v) {
+        atualizarDisplay("*");
+    }
+
+    public void onClickBtnDividir(View v) {
+        atualizarDisplay("/");
+    }
+
+    public void onClickBtnResultado(View v) {
+
+    }
+
     private void atualizarDisplay(String texto) {
         String textoDisplay = display.getText().toString();
         textoDisplay = textoDisplay + texto;
         display.setText(textoDisplay);
     }
+
+
 
 
 }
